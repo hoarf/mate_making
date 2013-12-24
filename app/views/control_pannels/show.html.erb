@@ -1,0 +1,20 @@
+<div class="container-fluid">
+  <div class="row-fluid">
+      <div class="bro-pannel span4">
+        <legend><%= @user.name %>'s tags</legend>
+        <textarea id="user_tags" data-title="bros before ..." data-content="coloca aqui o seus interesses separados por vírgulas. usa underscores => '_' ao invés de espaços. Pra te dar uma mão: 'python, arduino, computacao_quantica'"></textarea>
+      </div>
+      </fieldset>
+      <div class="bro-pannel span4">
+        <legend id="bro">seu bro</legend>
+          <p class="well text-center">
+            você ta em nenhum bro cara ;_;
+          </p>
+      </div>
+      <div class="bro-pannel span4">
+        <legend id="bro_tags" data-title="bros R 4ev" data-content="mesmo esquema sóqñ. aqui voce coloca as coisas que voce gostaria de ajudar outras pessoas a encontrar no mate"  >
+          <%= @user.name %>'s bro_tags</legend>
+          <textarea></textarea>
+      </div>
+  </div>
+</div>

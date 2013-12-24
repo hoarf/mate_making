@@ -1,0 +1,8 @@
+<% if @user.mate.nil? %>
+  <h3>Você não possui um mate ainda!111eleven</h3>
+  <%= form_for(@user, url: edit_user_mate_path) do |f| %>
+    <%= f.submit "encontrar um mate" %>
+  <% end %>
+<% else %>
+  <%= @user.mate.email %>
+<% end %>

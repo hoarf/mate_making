@@ -1,0 +1,16 @@
+<header class="navbar navbar-fixed-top navbar-inverse">
+  <div class="navbar-inner">
+    <div class="container">
+      <%= link_to 'mm.home()', '/' , id: "logo" %>
+      <nav>
+        <ul class="nav pull-right">
+          <% if user_signed_in? %>
+            <%= render 'layouts/links_logado' %>
+          <% else %>
+          <li><%= link_to('mm.log_in()', new_user_session_path) %></li>
+          <% end %>
+        </ul>
+      </nav>
+    </div>
+  </div>
+</header>
