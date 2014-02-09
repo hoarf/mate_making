@@ -5,8 +5,9 @@ gem 'rails', '3.2.13'
 gem 'devise'
 gem 'jquery-rails', '2.0.2'
 gem "select2-rails", "~> 3.5.1"
-gem 'acts-as-taggable-on', '2.3.1
-'
+gem 'acts-as-taggable-on', '2.3.1'
+gem "gom", "~> 0.5.2"
+
 group :development, :test do
   gem 'sqlite3', '1.3.5'
   gem 'rspec-rails', '2.11.0'

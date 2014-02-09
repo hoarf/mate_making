@@ -52,6 +52,7 @@ GEM
       coffee-script-source
       execjs
     coffee-script-source (1.6.3)
+    configure (0.3.0)
     devise (3.1.1)
       bcrypt-ruby (~> 3.0)
       orm_adapter (~> 0.1)
@@ -62,6 +63,8 @@ GEM
     erubis (2.7.0)
     execjs (2.0.2)
     ffi (1.9.0)
+    gom (0.5.2)
+      configure (>= 0.3.0)
     hike (1.2.3)
     i18n (0.6.1)
     journey (1.0.4)
@@ -163,6 +166,7 @@ DEPENDENCIES
   capybara (= 1.1.2)
   coffee-rails (= 3.2.2)
   devise
+  gom (~> 0.5.2)
   jquery-rails (= 2.0.2)
   pg (= 0.12.2)
   rails (= 3.2.13)

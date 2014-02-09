@@ -4,4 +4,3 @@ $(document).ready -> $(".tag_field").select2(
     width: "element" 
   } 
 )
-# .on("change", (e) -> alert e.val )

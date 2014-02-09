@@ -1,16 +1,5 @@
-<header class="navbar navbar-fixed-top navbar-inverse">
-  <div class="navbar-inner">
-    <div class="container">
-      <%= link_to 'mm.home()', '/' , id: "logo" %>
-      <nav>
-        <ul class="nav pull-right">
-          <% if user_signed_in? %>
-            <%= render 'layouts/links_logado' %>
-          <% else %>
-          <li><%= link_to('mm.log_in()', new_user_session_path) %></li>
-          <% end %>
-        </ul>
-      </nav>
-    </div>
-  </div>
-</header>
+<% if user_signed_in? %>
+  <%= render 'layouts/links_logado' %>
+<% else %>
+<li data-slide="5" class="col-12 col-sm-2"><a id="menu-link-5" href="#slide-5" title="Next Section"><span class="icon icon-user"></span> <span class="text">LOG IN</span></a></li>
+<% end %>
